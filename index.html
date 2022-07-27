@@ -15,16 +15,23 @@
 <body>
     <header class="head">
         <div class="container head-container">
+        <nav class="head-container__nav-list">
+            
             <a class="head-container__logo" href="./index.html" lang="en">
                 Web<span class="studio">Studio</span>
             </a>
-        <nav class="head-container__nav-list">
+            
             <ul class="head-container__menu">
                 <li class="nav-link"><a href="./index.html" class="navigation-link--current">Студия</a></li>
                 <li><a href="./portfolio.html" class="navigation-link">Портфолио</a></li>
                 <li><a href="./" class="navigation-link">Контакты</a></li>
             </ul>
         </nav>
+        <button type="button" width="40" height="40" class="menu-button">
+            <svg width="40" height="40">
+                <use href="./images/icons.svg#mobile-menu-icon"></use>
+            </svg>
+        </button>
         <ul class="head-container__contact-list">
             <li><a class="mail" href="mailto:info@devstudio.com">
                 <svg class="mail-icon" width="16" height="12">
@@ -36,7 +43,9 @@
                     <use href="./images/icons.svg#icon-tel"></use>
                 </svg>+38 096 111 11 11</a></li>
         </ul>
+        
         </div>
+        
     </header>
     <main>
         <section class="banner">
