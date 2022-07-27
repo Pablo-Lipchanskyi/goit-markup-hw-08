@@ -152,21 +152,6 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.mobile-window {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 48px 40px;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-}
-@media screen and (min-width: 768px) {
-  .mobile-window {
-    display: none;
-  }
-}
-
 .head {
   background-color: #ffffff;
   color: #212121;
@@ -247,6 +232,32 @@ a {
   .menu-button {
     display: none;
   }
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 @media screen and (max-width: 767px) {
