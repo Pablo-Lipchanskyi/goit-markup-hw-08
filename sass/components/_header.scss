@@ -1,0 +1,141 @@
+.head {
+    background-color: $headback;
+    color: $headtextcolor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid $border-bottom;
+}
+.head-container {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__logo {
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19;
+            letter-spacing: 0.03em;
+            color: $logocolor;
+            padding-top: 24px;
+            padding-bottom: 25px;
+        }
+    &__nav-list {
+            display: flex;
+            align-items: center;
+        }
+    &__menu {
+            margin-left: 93px;
+    
+    }
+}
+
+.head-container__nav-list>ul {
+    display: flex;
+    align-items: center;
+}
+.studio {
+    color: $studiocolor;
+}
+
+.head-container__contact-list {
+    display: flex;
+    margin-left: auto;
+}
+.navigation-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:focus,
+    &:hover {
+        color: $logocolor;
+        }
+    &--current {
+        color: $logocolor;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+
+
+.head-container__menu>li:not(:first-child) {
+    margin-left: 50px;
+}
+.nav-link {
+    position: relative;
+    
+    &::after {
+            display: block;
+            position: absolute;
+            content: '';
+            margin-top: 29px;
+            height: 4px;
+            width: 100%;
+            background-color: $logocolor;
+            border-radius: 2px;
+        }
+}
+
+
+
+.mail {
+    display: flex;
+    align-items: center;
+    color: $textcolor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__icon {
+            fill: $textcolor;
+            width: 22px;
+            height: 16px;
+            margin-right: 10px;
+            transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    &:hover,
+    &:focus {
+            stroke: $logocolor;
+            stroke-width: 2px;
+        }
+}
+
+.contact-list {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.mail:hover,
+.mail:focus {
+    color: $logocolor;
+}
+
+.tel{
+    display: flex;
+    align-items: center;
+    color: var(--textcolor);
+    margin-left: 50px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $logocolor;
+    }
+}
+    .tel:hover,
+    .tel:focus {
+    fill: $logocolor;
+    stroke: $logocolor;
+    stroke-width: 2px;
+}
+.tel-icon {
+    fill: currentColor;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
