@@ -8,7 +8,7 @@
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -32,6 +32,10 @@
     background: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    @media screen and(max-width:1199px){
+        width: 100%;
+        max-width: 450px;
+    }
 
     &__close {
             position: absolute;
@@ -170,6 +174,8 @@
             height: 15px;
             margin-right: 5px;
             margin-left: 12px;
+            @media screen and(max-width:1199px) {
+                margin-left: 0;}
         }
 }
 
@@ -197,6 +203,11 @@
     letter-spacing: 0.03em;
     color: $textcolor;
     text-align: center;
+    @media screen and(max-width:1199px) {
+            font-size: 12px;
+            line-height: 1.16;
+            margin-left: 24px;
+        }
 }
 
 .backdrop.is-hidden .modal {

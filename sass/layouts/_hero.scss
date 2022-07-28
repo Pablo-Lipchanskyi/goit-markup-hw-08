@@ -18,6 +18,13 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $headback;
+    @media screen and(max-width:768px){
+        width: 100%;
+        max-width: 480px;
+        font-size: 26px;
+            line-height: 1.6;
+            text-align: center;
+    }
 
 }
 
@@ -27,6 +34,10 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    @media screen and(max-width:768px) {
+            width: 100%;
+            max-width: 480px;
+        }
 
     &__text-logo {
             margin: 0 auto;

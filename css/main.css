@@ -570,6 +570,7 @@ a {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -596,6 +597,12 @@ a {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+  }
 }
 .modal__close {
   position: absolute;
@@ -772,6 +779,11 @@ a {
   margin-right: 5px;
   margin-left: 12px;
 }
+@media screen and (max-width: 1199px) {
+  .checkbox__icon {
+    margin-left: 0;
+  }
+}
 
 .checkbox__input:checked + .checkbox__icon .icon-one {
   opacity: 1;
@@ -795,6 +807,13 @@ a {
   letter-spacing: 0.03em;
   color: #757575;
   text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .terms-text {
+    font-size: 12px;
+    line-height: 1.16;
+    margin-left: 24px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -827,11 +846,26 @@ a {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+  .banner {
+    width: 100%;
+    max-width: 480px;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
 
 .hero-container {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .hero-container {
+    width: 100%;
+    max-width: 480px;
+  }
 }
 .hero-container__text-logo {
   margin: 0 auto;
