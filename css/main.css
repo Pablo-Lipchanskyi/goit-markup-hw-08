@@ -23,10 +23,20 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   padding: 0px 15px 0px 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .container {
+    width: 767px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -164,7 +174,7 @@ a {
 
 .head-container {
   position: relative;
-  width: 1200px;
+  width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,18 +186,32 @@ a {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .head-container {
+    width: 767px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .head-container {
+    width: 1200px;
+  }
+}
 .head-container__logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196F3;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+@media screen and (min-width: 767px) {
+  .head-container__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .head-container__nav-list {
+  width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,15 +223,21 @@ a {
           justify-content: space-between;
 }
 .head-container .head-container__menu {
-  display: none;
-  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: aquamarine;
+  padding: 20px;
 }
 @media screen and (min-width: 767px) {
   .head-container .head-container__menu {
+    position: relative;
     margin-left: 93px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0;
   }
 }
 
@@ -217,11 +247,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-right: 15px;
   margin: 0;
-  padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -234,42 +261,38 @@ a {
   }
 }
 
-.menu-button .icon-close {
+.menu-button .icon-menu {
   display: none;
 }
 
-.menu-button.is-open .icon-close {
+.menu-button.is-open .icon-menu {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button.is-open .icon-close {
   display: none;
 }
 
 .menu-container {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: aquamarine;
-  padding: 20px;
 }
 
 .menu-container.is-open {
   display: block;
 }
 
-@media screen and (max-width: 767px) {
-  .mobile {
-    width: 480px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+.mobile {
+  width: 479px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .head-container__nav-list > ul {
@@ -286,14 +309,19 @@ a {
 }
 
 .head-container__contact-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+  display: none;
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .head-container__contact-list {
     display: block;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .head-container__contact-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: auto;
   }
 }
@@ -378,7 +406,7 @@ a {
 .tel:hover, .tel:focus {
   color: #2196F3;
 }
-@media screen and (min-width: 767px) and (max-width: 1599px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .tel {
     margin: 0;
   }
@@ -845,15 +873,6 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-}
-@media screen and (max-width: 768px) {
-  .banner {
-    width: 100%;
-    max-width: 480px;
-    font-size: 26px;
-    line-height: 1.6;
-    text-align: center;
-  }
 }
 
 .hero-container {
