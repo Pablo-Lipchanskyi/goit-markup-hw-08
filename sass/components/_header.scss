@@ -82,12 +82,15 @@
 }
 .menu-container{
     display: flex;
+    margin-left: 88px;
+
     @media screen and(max-width:767px) {
             display: none;
             position: absolute;
             top: 100%;
             left: 0;
             width: 100%;
+            margin: 0;
             padding-left: 40px;
             padding-top: 48px;
             padding-bottom: 48px;
@@ -98,6 +101,7 @@
             letter-spacing: 0.02em;
     
         }
+ 
 
     &.is-open{
         @media screen and(max-width:767px) {
@@ -126,7 +130,6 @@
         position: relative;
         @media screen and(min-width:767px) {
             display: flex;
-            margin-left: 88px;
             align-items: center;
         }
         
@@ -140,7 +143,7 @@
         }
         @media screen and(min-width:1199px){
             display: flex;
-            margin-left: 300px;
+            margin-left: 305px;
             align-items: center;
         }
     }
@@ -201,7 +204,6 @@
             width: 100%;
             margin-top: 30px;
             height: 4px;
-            width: 100%;
             background-color: $logocolor;
             border-radius: 2px;
             

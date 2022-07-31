@@ -1,8 +1,26 @@
+.work-section{
+    @media screen  and(max-width:1199px){
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+}
 .work-container {
-    display: block;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+display: none;
+    @media screen and(min-width:479px) {
+            width: 480px;
+        }
+    
+        @media screen and(min-width:767px) {
+            width: 768px;
+        }
+    
+        @media screen and(min-width:1199px) {
+            width: 1200px;
+            display: block;
+                margin-left: auto;
+                margin-right: auto;
+        }
+   
 
     &__work-header {
             color: $headtextcolor;
