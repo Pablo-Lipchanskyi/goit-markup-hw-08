@@ -9,10 +9,30 @@
 }
 
 .foot-container {
-    display: flex;
+    @media screen and(min-width: 768px){
+        display: flex;
+            margin-left: auto;
+            margin-right: auto;
+    }
+    
+    display: block;
     margin-left: auto;
     margin-right: auto;
-
+    text-align: center;
+        &__logo{
+            font-family: 'Raleway';
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 1.16;
+                letter-spacing: 0.03em;
+                color: $logocolor;
+            
+                @media screen and(min-width:767px) {
+                    display: flex;
+                    font-size: 26px;
+                    line-height: 1.19;
+                }
+        }
         &__adress {
             list-style: none;
             font-style: normal;
@@ -49,9 +69,14 @@
 
 
 .links-container {
+    @media screen and(min-width:768px) {
+        margin-left: 70px;
+        margin-top: 12px;
+    }
     padding: 0;
-    margin-left: 70px;
-    margin-top: 12px;
+    margin-top: 60px;
+    margin-left: 0;
+    align-items: center;
 }
 
 .links-container>h3 {
@@ -64,9 +89,14 @@
 }
 
 .links-list {
+    @media screen and(min-width:768px) {
+            
+    }
     display: flex;
+    justify-content: center;
     margin-top: 20px;
-}
+    margin-left: auto;
+    margin-right: auto;                  }
 
 .links-list__links-item {
     display: flex;
@@ -110,13 +140,19 @@
 }
 
 .email-form {
-    margin-left: 93px;
-    margin-top: 12px;
+    @media screen and(min-width:768px) {
+        margin-left: 93px;
+        margin-top: 12px;
+    }
+    margin-top: 60px;
+    
 
 }
 
 .form {
-    display: flex;
+    @media screen and(min-width:768px) {
+    display: flex;}
+    display: block;
 }
 
 .email-form h3 {
@@ -130,7 +166,10 @@
 }
 
 .form input {
-    width: 358px;
+    @media screen and(min-width:768px) {
+        width: 358px;
+    }
+    width: 100%;
     height: 50px;
     left: 815px;
     top: 2787px;
