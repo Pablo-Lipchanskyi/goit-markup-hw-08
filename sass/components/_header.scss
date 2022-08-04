@@ -39,6 +39,7 @@
 .head-container__nav-list{
     @media screen and(min-width:767px) {
             display: flex;
+            
         }
 }        
 .mobile {
@@ -73,9 +74,9 @@
 }
 .menu-container{
     display: flex;
-    margin-left: 88px;
     background-color: #fff;
-    z-index: 20;
+    margin-left: auto;
+    justify-content: space-between;
 
     @media screen and(max-width:767px) {
             display: none;
@@ -87,6 +88,7 @@
             padding-left: 40px;
             padding-top: 48px;
             padding-bottom: 48px;
+            z-index: 20;
             background-color: #fff;
             font-weight: 500;
             font-size: 40px;
@@ -132,11 +134,11 @@
         display: none;}
         @media screen and(min-width:767px) and(max-width:1199px)  {
             display: block;
-            margin-left: 96px;
+            margin-left: auto;
         }
         @media screen and(min-width:1199px){
             display: flex;
-            margin-left: 305px;
+            margin-left: auto;
             align-items: center;
         }
     }
