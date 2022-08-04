@@ -32,6 +32,10 @@
         
         margin-top: 20px;
         }
+    @media screen and(min-width:1199px){
+        margin-top: 0;
+        margin-left: 12px;
+    }
     cursor: pointer;
     display: flex;
     margin-top: 20px;
