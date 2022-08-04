@@ -647,6 +647,13 @@ a {
 }
 @media screen and (min-width: 1199px) {
   .links-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 0;
   }
 }
@@ -831,7 +838,6 @@ a {
 
 .modal {
   position: relative;
-  width: 100%;
   padding: 40px;
   max-height: 581px;
   height: 100%;
@@ -845,8 +851,8 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -65%) scale(1);
+            transform: translate(-50%, -65%) scale(1);
     -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1152,11 +1158,16 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .feature-cont__features {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1166,6 +1177,11 @@ a {
 @media screen and (min-width: 767px) {
   .feature-list {
     width: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 1199px) {
+  .feature-list {
+    width: 25%;
   }
 }
 .feature-list__feature-icon {
@@ -1188,6 +1204,12 @@ a {
   fill: currentColor;
 }
 
+@media screen and (min-width: 1199px) {
+  .feature-list:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 @media screen and (min-width: 767px) {
   .feature-list:not(:nth-child(even)) {
     margin-right: 30px;
@@ -1203,6 +1225,11 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1199px) {
+  .feature-list h3 {
+    text-align: left;
+  }
+}
 
 .feature-list p {
   display: -webkit-box;
@@ -1216,6 +1243,11 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1199px) {
+  .feature-list p {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1362,21 +1394,12 @@ a {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
-}
-@media screen and (max-width: 767px) {
-  .comm-list__individ {
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
+  margin-right: 0;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 767px) {
   .comm-list__individ:not(:nth-child(even)) {
     margin-right: 30px;
-  }
-}
-@media screen and (min-width: 767px) {
-  .comm-list .comm-list__individ:nth-child(-n+2) {
-    margin-bottom: 30px;
   }
 }
 
