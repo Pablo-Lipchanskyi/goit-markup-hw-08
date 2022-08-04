@@ -1366,7 +1366,7 @@ a {
 }
 .client-list__client-pozition {
   display: block;
-  width: 210px;
+  width: calc(50% - 30px);
   height: 92px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1405,6 +1405,18 @@ a {
 .client-list__client-pozition > a:hover, .client-list__client-pozition > a:focus {
   fill: #2196F3;
   border-color: #2196F3;
+}
+
+@media screen and (min-width: 767px) {
+  .client-list__client-pozition {
+    width: 33.3333333333%;
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .client-list__client-pozition:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .menu-buttons {
