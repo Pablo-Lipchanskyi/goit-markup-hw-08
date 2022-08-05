@@ -599,6 +599,13 @@ img {
             justify-content: center;
   }
 }
+@media screen and (min-width: 1199px) {
+  .foot-container__logo {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
 .foot-container__adress {
   list-style: none;
   font-style: normal;
@@ -1462,18 +1469,7 @@ img {
 
 @media screen and (min-width: 1199px) {
   .comm-list__individ {
-    width: 25%;
     margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 767px) {
-  .comm-list__individ {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 479px) {
-  .comm-list__individ {
-    width: 100%;
   }
 }
 
@@ -1595,15 +1591,25 @@ img {
   border-color: #2196F3;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .client-list__client-pozition {
     width: calc(33.3333333333% - 60px);
     margin-right: 30px;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .client-list__client-pozition:nth-child(3n) {
     margin-right: 0;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .client-list__client-pozition {
+    width: calc(16.6666666667% - 30px);
+  }
+}
+@media screen and (min-width: 1199px) {
+  .client-list__client-pozition:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -1685,7 +1691,7 @@ img {
 }
 
 .item {
-  width: 100%;
+  display: block;
   border: 1px solid #EEEEEE;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1697,7 +1703,7 @@ img {
 }
 @media screen and (min-width: 767px) {
   .item {
-    width: calc((100% - 30px) / 2);
+    width: calc(50% - 30px);
   }
   .item:not(:nth-child(even)) {
     margin-right: 30px;
@@ -1708,8 +1714,8 @@ img {
 }
 @media screen and (min-width: 1199px) {
   .item {
-    width: calc((100% - 60px) / 3);
     margin-right: 30px;
+    width: calc(33.3333333333% - 60px);
   }
   .item:nth-child(3n) {
     margin-right: 0;

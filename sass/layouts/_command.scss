@@ -69,14 +69,8 @@
 }
 .comm-list__individ{
     @media screen and(min-width:1199px) {
-        width: calc(100%  / 4);
         margin-bottom: 0;}
-    @media screen and(min-width:767px){
-            width: calc(100%  / 2);
-        }
-        @media screen and(min-width:479px) {
-            width: 100%;
-        }
+
 }
 
 

@@ -14,13 +14,12 @@
 }
 
 .item {
-    width: 100%;
+    display: block;
     &:not(:last-child) {
         margin-bottom: 30px;
         }
     
     @media screen and(min-width:767px) {
-        width: calc((100% - 30px) / 2);
         &:not(:nth-child(even)) {
                 margin-right: 30px;
             }
@@ -28,15 +27,16 @@
             &:not(:nth-child(n + 9)) {
                 margin-bottom: 30px;
             }
+        width: calc(100% / 2 - 30px);
     }
             
         
     @media screen and(min-width:1199px) {
-        width: calc((100% - 60px) / 3);
         &:nth-child(3n) {
         margin-right: 0;
     }
         margin-right: 30px;
+        width: calc(100% / 3 - 60px);
     
         &:not(:nth-child(n + 7)) {
             margin-bottom: 30px;
