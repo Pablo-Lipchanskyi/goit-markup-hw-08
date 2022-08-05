@@ -134,7 +134,7 @@
                 <li class="work-list-items">
                         <img
                         srcset="./images/work/layout.jpg 1x , ./images/work/layoutx2.jpg 2x"
-                        src="./images/layout.jpg" alt="layout" width="370" height="295">
+                        src="./images/layout.jpg" alt="layout" width="370">
                         <div class="description">
                             <p>ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                         </div>
@@ -171,13 +171,17 @@
             <div class="container comm-container">
             <h2 class="comm-container__comm-header">Наша команда</h2>
             <ul class="comm-list">
-            <li class="comm-list__individ">
-                <picture>
-                    <source srcset="./images/command/photo1mob 1x , ./images/command/photo1mobx2.jpg 2x" media="(max-width=767px)">
-                    <source srcset="./images/command/photo1tab 1x , ./images/command/photo1tabx2.jpg 2x" media="(max-width=1199px)">
-                    <source srcset="./images/command/photo1desk 1x , ./images/command/photo1deskx2 2x" media="(min-width=1199px)">
-                    <img src="./images/photo1.jpg" alt="hero-image">
-                </picture>
+            <li class="comm-list__individ">  
+                    <img
+                    srcset="
+                  ./images/command/photo1mob.jpg  450w,
+                  ./images/command/photo1mobx2.jpg  900w,
+                  ./images/command/photo1tab.jpg  354w,
+                  ./images/command/photo1tabx2.jpg  708w,
+                  ./images/command/photo1desk.jpg 270w,
+                  ./images/command/photo1deskx2.jpg 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px"
+                src="./images/photo1.jpg" alt="hero-image">
                 <div class="name-prof">
                 <h3>Игорь Демьяненко</h3>
                 <p>Product Designer</p>
@@ -215,7 +219,16 @@
                 </div>
             </li>
             <li class="comm-list__individ">
-                <img src="./images/photo2.jpg" alt="работник2" width="270"/>
+                <img 
+                srcset="
+                  ./images/command/photo2mob.jpg  450w,
+                  ./images/command/photo2mobx2.jpg  900w,
+                  ./images/command/photo2tab.jpg  354w,
+                  ./images/command/photo2tabx2.jpg  708w,
+                  ./images/command/photo2desk.jpg 270w,
+                  ./images/command/photo2deskx2.jpg 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px"
+                src="./images/photo2.jpg" alt="hero-image">
                 <div class="name-prof">
                 <h3>Ольга Репина</h3>
                 <p>Frontend Developer</p>
@@ -252,7 +265,16 @@
                 </div>
             </li>
             <li class="comm-list__individ">
-                <img src="./images/photo3.jpg" alt="работник3" width="270"/>
+                <img 
+                      srcset="
+                  ./images/command/photo3mob.jpg  450w,
+                  ./images/command/photo3mobx2.jpg  900w,
+                  ./images/command/photo3tab.jpg  354w,
+                  ./images/command/photo3tabx2.jpg  708w,
+                  ./images/command/photo3desk.jpg 270w,
+                  ./images/command/photo3deskx2.jpg 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px"
+                src="./images/photo3.jpg" alt="hero-image">
                 <div class="name-prof">
                 <h3>Николай Тарасов</h3>
                 <p>Marketing</p>
@@ -289,7 +311,16 @@
                 </div>
             </li>
             <li class="comm-list__individ">
-                <img src="./images/photo4.jpg" alt="работник4" width="270"/>
+                <img
+                srcset="
+                  ./images/command/photo4mob.jpg  450w,
+                  ./images/command/photo4mobx2.jpg  900w,
+                  ./images/command/photo4tab.jpg  354w,
+                  ./images/command/photo4tabx2.jpg  708w,
+                  ./images/command/photo4desk.jpg 270w,
+                  ./images/command/photo4deskx2.jpg 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px"
+                src="./images/photo4.jpg" alt="hero-image">
                 <div class="name-prof">       
                 <h3>Михаил Ермаков</h3>
                 <p>UI Designer</p>
