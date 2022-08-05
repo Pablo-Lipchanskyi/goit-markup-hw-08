@@ -311,16 +311,19 @@
                 </div>
             </li>
             <li class="comm-list__individ">
-                <img
+                <picture>
+                    <source   
                 srcset="
-                  ./images/command/photo4mob.jpg  450w,
-                  ./images/command/photo4mobx2.jpg  900w,
-                  ./images/command/photo4tab.jpg  354w,
-                  ./images/command/photo4tabx2.jpg  708w,
-                  ./images/command/photo4desk.jpg 270w,
-                  ./images/command/photo4deskx2.jpg 540w"
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px"
-                src="./images/photo4.jpg" alt="hero-image">
+                  ./images/command/photo4mob.jpg 1x 450w,
+                  ./images/command/photo4mobx2.jpg 2x  900w" media=“(max-width: 767px)“>
+                <source srcset="./images/command/photo4tab.jpg 1x 354w,
+                  ./images/command/photo4tabx2.jpg 2x 708w" media=“(max-width: 1199px)“>
+                <source srcset="./images/command/photo4desk.jpg 1x 270w,
+                  ./images/command/photo4deskx2.jpg 2x 540w" media=“(max-width: 1200px)“>
+                
+                <img src="./images/photo4.jpg" alt="hero-image"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px">
+                </picture>
                 <div class="name-prof">       
                 <h3>Михаил Ермаков</h3>
                 <p>UI Designer</p>
