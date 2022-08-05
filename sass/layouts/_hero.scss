@@ -5,7 +5,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-image: $imagegradient, url('./images/command.jpg');
+    background-image: $imagegradient, url('/images/command.jpg');
     height: 600px;
     max-width: 1600px;
     background-size: cover;
@@ -16,7 +16,7 @@
     @media (max-width: 767px) {
     
             background-image: $imagegradient,
-                url("./images/hero/hero-mob.jpg");
+                url("/images/hero/hero-mob.jpg");
         }
     
         @media (max-width: 767px) and (min-device-pixel-ratio: 2),
@@ -24,12 +24,12 @@
         (max-width: 767px) and (min-resolution: 192dpi),
         (max-width: 767px) and (min-resolution: 2dppx) {
             background-image: $imagegradient,
-                url("./images/hero-mobx2.jpg");
+                url("/images/hero-mobx2.jpg");
         }
     
         @media (min-width: 768px) and (max-width: 1199px) {
             background-image: $imagegradient,
-                url("./images/hero/hero-tablet.jpg");
+                url("/images/hero/hero-tablet.jpg");
         }
     
         @media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
@@ -37,7 +37,7 @@
         (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi),
         (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
             background-image: $imagegradient,
-                url("./images/hero/hero-tabletx2.jpg");
+                url("/images/hero/hero-tabletx2.jpg");
         }
     
         @media (min-width: 1200px) {
@@ -46,7 +46,7 @@
             padding-bottom: 200px;
     
             background-image: $imagegradient,
-                url("./images/hero/hero-desk.jpg");
+                url("/images/hero/hero-desk.jpg");
         }
     
         @media (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -54,7 +54,7 @@
         (min-width: 1200px) and (min-resolution: 192dpi),
         (min-width: 1200px) and (min-resolution: 2dppx) {
             background-image: $imagegradient,
-                url("./images/hero/hero-deskx2.jpg");
+                url("/images/hero/hero-deskx2.jpg");
         }
     font-weight: 900;
     font-size: 44px;
