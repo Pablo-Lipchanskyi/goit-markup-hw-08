@@ -270,11 +270,17 @@ img {
   border: none;
   border-radius: 50%;
   outline: none;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 767px) {
   .menu-button {
     display: none;
   }
+}
+
+.button-icon:hover, .button-icon:focus {
+  fill: #2196F3;
 }
 
 .menu-button.is-open {
