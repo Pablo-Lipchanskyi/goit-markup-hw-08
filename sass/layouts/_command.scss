@@ -1,6 +1,6 @@
 .command {
     background-color: $backforteamlist;
-    padding-bottom: 94px;
+ 
 }
 
 .comm-container {
@@ -8,13 +8,19 @@
     margin-right: auto;
 
     &__comm-header {
-            color: $headtextcolor;
-            font-weight: 700;
+        @media screen and (min-width:1199px) {
             font-size: 36px;
-            line-height: 1.17;
+            margin-bottom: 50px;
+        }
+            color: $headtextcolor;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 1.17;
+                    text-align: center;
+                    letter-spacing: 0.03em;
             text-align: center;
             margin-top: 0;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
     
         }
 }
@@ -54,15 +60,24 @@
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
             background: $webfoot;
-                    margin-right: 0;
-                    margin-bottom: 30px;}
+            margin-right: 0;
+    }               
     
     &__individ:not(:nth-child(even)) {
         @media screen and(min-width:767px) {
             margin-right: 30px;}
-    
         }
-}
+    &__individ:not(:last-child) {
+        margin-bottom: 30px;
+    }
+        
+    &__individ:nth-last-child(-n + 2) {
+        @media screen and(min-width:767px) {
+                margin-bottom: 0;
+                }
+        
+        }
+    }
 .comm-list__individ:not(:last-child){
     @media screen and(min-width:1199px) {
         margin-right: 30px;}
@@ -70,8 +85,8 @@
 .comm-list__individ{
     @media screen and(min-width:1199px) {
         margin-bottom: 0;}
+    }
 
-}
 
 
 
@@ -121,5 +136,4 @@
             background-color: $iconhover;
     
         }
-}
-
+    }

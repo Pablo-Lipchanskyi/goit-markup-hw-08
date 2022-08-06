@@ -1,5 +1,4 @@
 .head {
-    position: relative;
     background-color: $headback;
     color: $headtextcolor;
     font-weight: 500;
@@ -43,6 +42,7 @@
         }
 }        
 .mobile {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,38 +52,50 @@
     @media screen and(min-width:767px) {
             display: none;
         }
-                z-index: 21;
+                z-index: 200;
                 min-height: 40px;
                 min-width: 40px;
-                display: flex;
-                padding-right: 15px;
+                display: block;
+                margin-left: auto;
                 background-color: transparent;
                 cursor: pointer;
                 border: none;
                 border-radius: 50%;
                 outline: none;
 }
-.menu-button .icon-close{
+.menu-button.is-open{
+    position: fixed;
+        top: 21px;
+        right: 25px;
+        
+}
+.menu-button .icon-menu{
     display: none;
 }
 .menu-button.is-open .icon-menu{
-    display: none;
+    display: block;
 }
 .menu-button.is-open .icon-close {
-    display: block;
+    display: none;
 }
 .menu-container{
     display: flex;
     background-color: #fff;
-    margin-left: auto;
-    justify-content: space-between;
-
+    
+    @media screen and(min-width:1199px){
+        margin-left:93px;
+    }
+    @media screen and(min-width:767px) {
+        margin-left: 88px;
+    }
     @media screen and(max-width:767px) {
             display: none;
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 100vw;
+            height: 100vh;
+            overflow-y: scroll;
             margin: 0;
             padding-left: 40px;
             padding-top: 48px;

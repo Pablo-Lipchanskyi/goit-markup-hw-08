@@ -1,8 +1,7 @@
 .work-section{
-    @media screen  and(max-width:1199px){
-        padding-top: 0;
-        padding-bottom: 30px;
-    }
+    padding-top: 0;
+    @media screen and(max-width:1199px) {
+        display: none;}
 }
 .work-container {
 display: none;
