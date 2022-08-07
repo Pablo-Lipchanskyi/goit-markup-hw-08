@@ -68,7 +68,8 @@
             margin-right: 30px;}
         }
     &__individ:not(:last-child) {
-        margin-bottom: 30px;
+        @media screen and(min-width:767px) and (max-width:1199px){
+        margin-bottom: 30px;}
     }
         
     &__individ:nth-last-child(-n + 2) {
